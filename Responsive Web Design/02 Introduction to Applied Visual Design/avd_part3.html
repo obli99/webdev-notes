@@ -1,0 +1,84 @@
+<style>
+    body {
+        /* Create a Gradual CSS Linear Gradient */
+        background: linear-gradient(180deg, #000000, grey, lightgrey, #ffffff);
+    }
+    /* Center an Element Horizontally Using the margin Property */
+    div {
+        width: 60%;
+        height: 200px;
+        margin: auto;
+        margin-top: 20px;
+    }
+    
+    /* Change the Position of Overlapping Elements with the z-index Property */
+    .first {
+        background-color: red;
+        position: absolute;
+        z-index: 2;
+    }
+    .second {
+        background-color: blue;
+        position: absolute;
+        left: 40px;
+        top: 50px;
+        z-index: 1;
+    }
+    /* Use the CSS Transform scale Property to Scale an Element on Hover */
+    .box:hover {
+      transform: scale(1.2);
+    }
+    .box {
+        display: inline-block;
+        margin-top: 300px;
+        height: 100px;
+        width: 100px;
+    }
+    /* Adjust the Hue of a Color using hsl() */
+    .green {
+        background-color: hsl(120, 100%, 50%);
+    }
+    /* Use the CSS Transform Property skewX to Skew an Element Along the X-Axis */
+    .cyan {
+        background-color: hsl(180, 100%, 50%);
+        transform: skewX(-30deg);
+    }
+
+    .blue {
+        background-color: hsl(240, 100%, 50%);
+    }
+    
+    .ball {
+        width: 40px;
+        height: 40px;
+        margin: 50 auto;
+        position: fixed;
+        background: linear-gradient(
+          90deg,
+          #18ec34,
+          #4382e0
+        );
+        border-radius: 50%;
+    }
+    #ball1 {
+        left: 20%;
+    }
+    /* Use the CSS Transform scale Property to Change the Size of an Element */
+    #ball2 {
+        left: 65%;
+        transform: scale(3);
+
+    }
+  </style>
+  <body>
+    <div class="first"></div>
+    <div class="second"></div>
+    <div class="green box"></div>
+    <div class="cyan box"></div>
+    <div class="blue box"></div>
+    <div class="ball" id= "ball1"></div>
+    <div class="ball" id= "ball2"></div>
+  </body>
+  
+
+  
