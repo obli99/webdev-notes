@@ -1,0 +1,73 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    height: 100vh;
+    background: rgb(25, 13, 68);
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button {
+    background: none;
+    color: #ccc;
+    width: 240px;
+    height: 80px;
+    border: 2px solid rgb(50, 54, 52);
+    font-size: 18px;
+    border-radius: 4px;
+    transition: .7s;
+    overflow: hidden;
+    
+}
+
+button:focus {
+    outline: none;
+}
+
+button:before {
+    content: '';
+    background: rgba(255, 255, 255, .5);
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .6s;
+    filter: blur(30px);
+    transform: translateX(-130px) skewX(-20deg);
+}
+
+button:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, .2);
+    width: 30px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(30px);
+    transform: translate(-100px) scaleX(-20deg);
+}
+
+button:hover {
+    background: rgb(19, 92, 29);
+    cursor: pointer;
+}
+
+button:hover:after {
+    transform: translateX(3000px) skewX(-20deg);
+    opacity: .6;
+    transition: .7s;
+}
